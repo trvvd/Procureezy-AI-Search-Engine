@@ -1,4 +1,4 @@
-## 1. Project Structure
+# 1. Project Structure
 ```text
 procureezy_ai/
 ├── backend/
@@ -17,7 +17,10 @@ procureezy_ai/
 
 ```
 ---
-Install the dependencies:
 
+## Install the dependencies:
+
+```text
 pip install -r requirements.txt
-
+```
+---
