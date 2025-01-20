@@ -2,16 +2,16 @@
 ```text
 procureezy_ai/
 ├── backend/
-│   ├── main.py               # Точка входа (FastAPI-приложение)
-│   ├── db.py                 # Настройки подключения к Postgres
-│   ├── models.py             # SQLAlchemy-модели
-│   ├── schemas.py            # Pydantic-схемы (если нужно валидировать входные данные)
+│   ├── main.py               # Entry Point (FastAPI application)
+│   ├── db.py                 # Postgres Connection Settings
+│   ├── models.py             # SQLAlchemy-models
+│   ├── schemas.py            # Pydantic schemas 
 │   └── services/
-│       ├── llm_service.py      # Логика LLM (пример – OpenAI)
-│       ├── external_service.py # Функции fallback к внешнему API
-│       └── search_service.py   # Поисковая логика (по БД и fallback)
+│       ├── llm_service.py      # LLM logic
+│       ├── external_service.py # Fallback functions to the external API
+│       └── search_service.py   # Search logic (by DB and fallback)
 ├── tests/
-│   ├── test_search.py          # Пример юнит-тестов
+│   ├── test_search.py          # Example of unit tests
 ├── README.md
 └── requirements.txt
 
