@@ -1,19 +1,15 @@
 # 1. Project Structure
 ```text
 procureezy_ai/
-├── backend/
-│   ├── main.py               # Entry Point (FastAPI application)
-│   ├── db.py                 # Postgres Connection Settings
-│   ├── models.py             # SQLAlchemy-models
-│   ├── schemas.py            # Pydantic schemas 
-│   └── services/
-│       ├── llm_service.py      # LLM logic
-│       ├── external_service.py # Fallback functions to the external API
-│       └── search_service.py   # Search logic (by DB and fallback)
-├── tests/
-│   ├── test_search.py          # Example of unit tests
-├── README.md
-└── requirements.txt
+├── database_setup.py         # (SQL-code)
+├── main.py                   # (FastAPI-application)
+├── schemas.py                # (Pydantic-schemes)
+├── search_service.py         # (Logic of search + fallback)
+├── llm_service.py            # (LLM)
+├── agent_workflow.py         # (Future implementation of "agents" / chain-of-thought)
+├── requirements.txt          # (Dependencies)
+├── .env                      # (Environment variables: DATABASE_URL, etc.)
+└── README.md                 # (Documentation)
 
 ```
 ---
